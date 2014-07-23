@@ -1,0 +1,32 @@
+%button {
+    $btn-height: $base-line-height * 1.875;
+    // @include button(simple, $base-accent-color);
+    // border: 1px solid #094566;
+    border:none;
+    border-radius: $base-border-radius;
+    box-shadow:none;
+    display: inline-block;
+    font-size: $base-font-size * 1.2;
+    padding: $btn-height/5 $btn-height/1.25;
+    margin: 2px auto;
+    text-decoration: none;
+    background-clip: padding-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    line-height: $base-line-height * .75;
+
+    background: $base-link-color;
+    color: $white-1;
+    @include transition (all 0.2s ease-in-out);
+    &:hover {
+        background: darken($base-link-color, 8);
+    }
+}
+
+
+@include media($phone-down) {
+    %button {
+        padding: 7px 2px;
+    }
+}

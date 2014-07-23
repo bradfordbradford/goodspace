@@ -1,0 +1,85 @@
+
+
+///////////////////////////////////////////////////
+
+
+#site-header {
+    position: relative;
+    z-index: 1000;
+    width:100%;
+    height: $navbarHeight;
+    overflow: hidden;
+    @include transition(
+                        opacity 300ms ease-in-out,
+                        background 300ms ease-in-out
+                        );
+
+    // Logo
+    #company-logo {
+        float: left;
+
+        h1 {
+            display: inline-block;
+            background: url(../img/logos/logo_400x68.png) no-repeat ;
+            background-size: 100%;
+            width:254px;
+            height:120px;
+            margin: 0;
+            position: relative;
+            top: 34px;
+        }
+        span {
+            position: absolute;
+            left: -9999px;
+        }
+    }
+
+
+    // Nav
+    nav#site-nav {
+        float:right;
+        background: $white-1;
+
+        li {
+            display: inline-block;
+            margin: 32px 32px 0;
+        }
+        a {
+            font-family: $aux-font;
+            padding: $navbarLinkPadding;
+            color: $brown-3;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            font-size: 1em;
+            line-height: 2.5em;
+            text-align: left;
+            &,span {
+                @include transition(color 300ms ease-in-out);
+            }
+
+            span {
+                color:$brown-5;
+                padding: $navbarLinkPadding;
+                display: block;
+                font-style: italic;
+                font-family: $main-font;
+                line-height: 0;
+                text-transform: capitalize;
+                font-weight: 400;
+
+            }
+
+            &.active,
+            &:hover {
+                color: $green-1;
+                span {
+                    color: $orange-1;
+                }
+            }
+        }
+    }
+}
+
+

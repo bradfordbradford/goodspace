@@ -1,0 +1,58 @@
+// MEDIA QUERIES
+/////////////////////////////////////////////////////////
+
+
+
+// LANDSCAPE
+/////////////////////////////////////////////////////////
+@include media($ipad-landscape-down) {
+
+}
+
+
+// PORTRAIT
+/////////////////////////////////////////////////////////
+@include media($ipad-portrait-down) {
+
+
+    // Utility Hide/Show
+    .hide-on-tablet {
+        display: none !important;
+    }
+    .show-on-tablet {
+        display: inherit !important;
+    }
+
+    // Utility Grid
+    .col-one,
+    .col-two,
+    .col-three,
+    .col-four,
+    .col-five,
+    .col-six,
+    .col-seven,
+    .col-eight,
+    .col-nine,
+    .col-ten,
+    .col-eleven,
+    .col-twelve{
+        @include fullBleed;
+        margin: $base-line-height auto;
+    }
+
+
+
+}
+
+// Phone (480)
+/////////////////////////////////////////////////////////
+@include media($phone-down) {
+    .line-break {display: inline-block;}
+}
+
+
+// Phone (320)
+/////////////////////////////////////////////////////////
+@include media($phone-portrait-down) {
+
+}

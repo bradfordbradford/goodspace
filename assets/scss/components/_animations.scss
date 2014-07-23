@@ -1,0 +1,48 @@
+// Fade In Up Animation
+//////////////////////////////////////////////////////////////////
+@include keyframes(fadeInUp) {
+  0% {
+    @include opacity(0);
+    @include transform(translate3d(0, 40px, 0));
+  }
+  100% {
+    @include transform(none);
+    @include opacity(1);
+  }
+}
+
+// Fade Nicely Animation (for pulse effect)
+//////////////////////////////////////////////////////////////////
+@include keyframes(fadeNicely) {
+    0% {
+    @include opacity(0.4);
+  }
+  50% {
+    @include opacity(0.8);
+  }
+  100% {
+    @include opacity(0.4);
+  }
+}
+
+
+// // Shake Up & Down Animation
+// ////////////////////////////////////////////////////////////////////
+// @include keyframes(shakeUpDown) {
+//   0% {
+//     @include opacity(0);
+//   }
+//   10%, 30%, 50%, 70%, 90% {
+//     @include transform(translate3d(0, -2px, 0));
+//   }
+
+//   20%, 40%, 60%, 80% {
+//     @include transform(translate3d(0, 2px, 0));
+//     @include opacity(.4);
+//   }
+//   100% {
+//     @include opacity(.4);
+//   }
+// }
+
+

@@ -1,0 +1,79 @@
+
+
+
+// Structure: Footer //
+#site-footer {
+
+    // Basics
+    background: $brown-3 url('../img/patterns/footer-pattern1280x278.jpg');
+    color: $brown-6;
+    padding: 40px 0 80px;
+
+    // // Col Wrap
+    // .col-wrap {
+    //     @include span-columns(10);
+    //     @include centerColumns;
+    // }
+
+    // Header
+    header {
+        color: $white-1;
+    }
+
+    // UL
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            font-weight: 600;
+
+            &, span, em {
+                font-size: 0.94em;
+            }
+        }
+    }
+
+    // Links
+    a {
+        color: $brown-6;
+        text-decoration: underline;
+        &:hover {
+            color: $white-1;
+        }
+    }
+
+    // Line Break
+    .line-break {
+        display: block;
+        margin: 20px 0;
+    }
+
+    // HR
+    hr {
+        background: $brown-6;
+        width: 14em;
+        margin: 4px 0 6px;
+    }
+
+    // Facebook
+    .facebook {
+        font-size: 10em;
+        line-height: 0px;
+        display: block;
+        text-decoration: none;
+        color: $white-1;
+        margin-top: -24px;
+
+        &:hover {
+            color:  $brown-6;
+        }
+    }
+
+    // Copyright
+    .copyright {
+        line-height: 20px;
+        display: block;
+    }
+
+}

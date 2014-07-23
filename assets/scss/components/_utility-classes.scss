@@ -1,0 +1,81 @@
+
+
+
+
+// Utility Classes //
+
+
+
+// Hide/Show
+.hide-on-tablet {
+    display: inherit !important;
+}
+.show-on-tablet {
+    display: none !important;
+}
+.show-for-print {
+    display: none;
+}
+
+
+// Breaks
+.line-break {
+    display: block;
+}
+
+
+
+// // Colors
+// .color-text {
+//     color: $base-font-color !important;
+// }
+// a.color-text:hover {
+//     color: $blue !important;
+// }
+
+// // Typography
+// .capital-case {
+//     text-transform: capitalize;;
+// }
+// .serif {
+//     font-family: $main-font !important;
+// }
+// .sans {
+//     font-family: $main-font !important;
+// }
+// .sans-normal {
+//     font-family: $main-font !important;
+//     font-style: normal !important;
+// }
+// .strong {
+//     font-weight: 800 !important;
+// }
+// .italic {
+//     font-style: italic !important;
+// }
+// .normal {
+//     font-style: normal !important;
+//     font-weight: 200 !important;
+// }
+
+// // Alignment
+// .center {
+//     text-align: center;
+//     margin: inherit auto;
+// }
+// .right {
+//     float:right;
+// }
+// .left {
+//     float:left;
+// }
+
+// // Padding
+// .padding-b {
+//     padding-bottom: $base-line-height;
+// }
+// .padding-t {
+//     padding-top: $base-line-height;
+// }
+
+

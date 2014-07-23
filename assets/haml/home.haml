@@ -1,0 +1,203 @@
+!!! 5
+%html.no-js{:lang => "en"}
+
+    %head
+
+        %meta{:charset => "utf-8", :"http-equiv"=>"Content-Type", :content=>"text/html"}
+
+        %title GoodSpace
+        %meta{:name => "description", :content => ""}
+        %meta{:name => "keywords", :content => ""}
+        %meta{:name => "author", :content => ""}
+
+        -# Mobile
+        %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+
+        -# Typekit
+        %script{:src => "//use.typekit.net/pyj4pti.js"}
+        %script
+            try{Typekit.load();}catch(e){}
+
+        -# Favicon
+        / %link{:href => "../img/icons/favicon.ico", :rel => "shortcut icon"}
+
+        -# CSS
+        %link{:rel => "stylesheet", :href => "../css/app.css"}
+
+        -# Modernizr
+        %script{:src => "../js/min/modernizr.min.js"}
+
+        -# IE LT 9
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../css/ie8.css" /><script src='../js/min/ie.min.js'></script><![endif]-->
+
+
+
+    %body.init
+
+
+        %header#site-header{:role => "navigation"}
+            .outer-bounds
+
+                %a#company-logo{:href => ""}
+                    %h1
+                        %span GoodSpace
+                %nav#site-nav
+                    %li
+                        %a{:href => "#"}
+                            Commercial
+                            %span
+                                Properties
+                    %li
+                        %a{:href => "#"}
+                            Residential
+                            %span
+                                Properties
+                    %li
+                        %a{:href => "#"}
+                            About
+                            %span
+                                History & Guide
+                    %li
+                        %a{:href => "#"}
+                            Contact
+                            %span
+                                Information
+
+
+        %main#site-content{:role => "main"}
+            #browse-good-space
+                %section#browse-commercial
+                    %a{:href => "#"}
+                        %header
+                            %em Explore
+                            %h1
+                                Commercial
+                                %span.line-break
+                                Properties
+                            .btn{:href => ""} View Our Spaces
+                        .overlay
+
+
+                %section#browse-residential
+                    %a{:href => "#"}
+                        %header
+                            %em Browse
+                            %h1
+                                Residential
+                                %span.line-break
+                                Properties
+                            .btn{:href => ""} View Our Spaces
+                        .overlay
+
+            .outer-bounds
+
+                %section.inner-bounds#welcome-to-good-space
+                    .content-container
+                        %header.content-header
+                            %h3.title A Good Space to Call Home
+                        %article.content-copy
+                            %p
+                                We also do 'Simple' unbelievably well. We know that consistency is the 'Genius'. We hire the talented ones. And driven ones. We remember who puts the food on our table. We know you can’t build a business until you build a team. We recognise great value doesn’t mean a low price. That fun comes from hard work. That this is a place of learning. And that we will give back to our community.
+
+                %section.inner-bounds#what-we-do
+                    %ul.col-3-across
+                        %li.col-item
+                            %img{:src => "http://placehold.it/400x260", :'data-src' => "http://placehold.it/400x260", :alt => ""}/
+                            %header.content-header
+                                %h4.title Our Story
+                            %article
+                                %p
+                                    Learn more about our story and the philosophy  that guide us at Good Space.
+                        %li.col-item
+                            %img{:src => "http://placehold.it/400x260", :'data-src' => "http://placehold.it/400x260", :alt => ""}/
+                            %header.content-header
+                                %h4.title Our Story
+                            %article
+                                %p
+                                    Learn more about our story and the philosophy  that guide us at Good Space.
+                        %li.col-item
+                            %img{:src => "http://placehold.it/400x260", :'data-src' => "http://placehold.it/400x260", :alt => ""}/
+                            %header.content-header
+                                %h4.title Our Story
+                            %article
+                                %p
+                                    Learn more about our story and the philosophy  that guide us at Good Space.
+
+
+
+
+
+
+
+        %footer#site-footer{:role => "contentinfo"}
+            .outer-bounds
+                .inner-bounds
+                    .col-four
+                        %header
+                            %h4 Contact
+                        %ul
+                            %li.phone
+                                Phone:
+                                %a{:href => "#"} 214.942.0690
+                            %li.fax
+                                Fax:
+                                %a{:href => "#"} 214.942.0635
+                            %li.email
+                                Email:
+                                %a{:href => "#"} info@goodspace.com
+
+                            %span.line-break
+
+                            %li
+                                %em
+                                    Office Hours
+                                %br/
+                                M-F: 9am-5pm
+
+                    .col-four
+                        %header
+                            %h4 Location
+                        %ul#address
+                            %li.street
+                                408 W 8th St Ste 103
+                            %li.city
+                                Dallas, TX 75208
+                            %li.district
+                                %em
+                                    Bishop Arts District, Oak Cliff
+
+                            %span.line-break
+                                %a{:href => "#"} View Google Maps
+
+                    .col-four
+                        %header
+                            %a.facebook{:href => "#", :'data-icon'=>'d'}
+                        %hr/
+                        %em.copyright
+                            &copy; Copyright 2014 Good Space, Inc.
+                            %br/
+                            All Rights Reserved.
+
+
+
+
+
+        -# Scripts
+        %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+        // window.jQuery || document.write('<script src="../js/min/jquery.min.js"><\/script>')
+        %script{:src => "../js/min/sitescripts.min.js"}
+        %script{:src => "../js/min/app.min.js"}
+
+
+
+        -# Google Analytics
+            %script
+                var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+
+
+
+
+

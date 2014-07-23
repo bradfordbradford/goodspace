@@ -1,0 +1,66 @@
+//  Buttons
+///////////////////////////////////////////////////
+
+.btn {
+    $btn-height: $base-line-height * 1.875;
+    border:none;
+    line-height: $btn-height;
+    padding: $btn-height/5 $btn-height/1.25;
+    line-height: $base-line-height * .75;
+    border-radius: $base-border-radius;
+    @include transition (all 0.2s ease-in-out);
+    @include prefixer(box-sizing, border-box, webkit moz spec);
+    @include user-select(none);
+    font-size: $base-font-size * 1.2;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+    text-align: center;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: .012em;
+    margin: 2px auto;
+
+    // Default
+    border:4px solid $white-1;
+    color: $white-1;
+    &:hover {
+        background: darken($base-link-color, .2)
+    }
+
+    // // Secondary
+    // &.btn-secondary {
+    //     background: $purple;
+    //     color: $white;
+    //     &:hover {
+    //         background: darken($purple, 8)
+    //     }
+    // }
+
+    // // Tertiary
+    // &.btn-tertiary {
+    //     background: $green;
+    //     color: $white;
+    //     &:hover {
+    //         background: darken($green, 8)
+    //     }
+    // }
+
+    // // Neutral
+    // &.btn-neutral {
+    //     background: lighten($base-body-color, 3%);
+    //     color: lighten($grey, 2);
+    //     border: 1px solid $grey;
+    //     &:hover {
+    //         background: $base-body-color;
+    //     }
+    // }
+
+    // // Small
+    // &.btn-large {
+    //     font-size: $base-font-size;
+    // }
+
+}

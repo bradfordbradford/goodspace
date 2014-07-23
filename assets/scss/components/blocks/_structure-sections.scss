@@ -1,0 +1,76 @@
+// COMPONENTS
+///////////////////////////////////////////////////
+#browse-commercial,
+#browse-residential {
+    width: 50%;
+    min-height: 632px;
+    float: left;
+    position: relative;
+
+    // Overlay
+    .overlay {
+        @include transition(background .5s ease-in-out);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    // Header
+    header {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        margin-top: -124px;
+        z-index: 100;
+        top: 50%;
+        text-align: center;
+        h1 {
+            text-transform: uppercase;
+        }
+        em {
+            font-size: 1.5em;
+        }
+        h1, em, a {
+            color:white;
+        }
+    }
+
+    // Button
+    .btn {margin-top: 0.88em;}
+}
+
+#browse-commercial {
+    background: url('../img/content/commercial_1280x672.jpg') no-repeat;
+    .overlay {
+        background: transparentize($green-1, .2);
+    }
+    &:hover {
+        .overlay {
+            background: transparentize($green-1, 1);
+        }
+        .btn {
+            background: transparentize($green-1, .2);
+        }
+    }
+}
+#browse-residential {
+    background: url('../img/content/residential_921x889.jpg') -220px -70px no-repeat;
+    .overlay {
+        background: transparentize($orange-1, .2);
+    }
+    &:hover {
+        .overlay {
+            background: transparentize($orange-1, 1);
+        }
+        .btn {
+            background: transparentize($orange-1, .2);
+        }
+    }
+}
+
+#browse-good-space {
+    margin-top: -3.5em;
+    margin-bottom: 3.5em;
+    @include clearfix;
+}

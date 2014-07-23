@@ -1,0 +1,46 @@
+
+// IE8
+.no-backgroundsize  {
+    // SWAP
+    #site-header.stuck #company-logo h1 {
+        background: url(../img/logos/logo_138x60.png) no-repeat;
+        height:60px;
+        width:138px;
+    }
+    // CENTER
+    #welcome-to-aly-centrifuge {
+        background: url("../img/content/night_rig_1200x800.jpg") no-repeat top center;
+    }
+    #about-us {
+        background: url("../img/content/overlay_rig_1200x800.jpg") no-repeat top center;
+    }
+    #careers-with-aly-centrifuge {
+        background: url("../img/content/careers_1200x490.jpg") no-repeat top center;
+    }
+
+    // ADJUST
+    #welcome-to-aly-centrifuge .prompt {
+        bottom:0;
+    }
+    #welcome-to-aly-centrifuge header h2,
+    #about-us h1 {
+        padding-top: 3em;
+    }
+    section {
+        padding:0;
+    }
+}
+// NO RGBA
+.no-rgba {
+    #site-header nav#site-nav a.active, #site-header nav#site-nav a:hover {
+        color: #555A81;
+    }
+}
+
+// NO BORDER RADIUS
+.no-borderradius {
+    // HIDE
+    .circle-icon {
+        display: none;
+    }
+}

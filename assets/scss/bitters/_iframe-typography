@@ -1,0 +1,216 @@
+// IMPORT FONTS
+///////////////////////////////////////////////////
+
+@font-face {
+    font-family: 'alyregular';
+    src: url('http://alycentrifuge.com/fonts/aly-regular-webfont.eot');
+    src: url('http://alycentrifuge.com/fonts/aly-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://alycentrifuge.com/fonts/aly-regular-webfont.woff') format('woff'),
+         url('http://alycentrifuge.com/fonts/aly-regular-webfont.ttf') format('truetype'),
+         url('http://alycentrifuge.com/fonts/aly-regular-webfont.svg#alyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+// TYPOGRAPHY
+///////////////////////////////////////////////////
+body {
+  color: $grey;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  text-rendering: optimizeLegibility; // Fix the character spacing for headings
+  font-weight: 500;
+}
+
+h1 {
+  font-size: $base-font-size * 3;
+  font-family: 'alyregular';
+  text-transform: uppercase;
+  line-height: 1.25em;
+  letter-spacing: 0.125em;
+  word-spacing: 0.125em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: $base-font-size * 1.6;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.042em;
+  word-spacing: 0.02em;
+  &.lead {
+    letter-spacing: 0.072em;
+    font-size: $base-font-size * 2;
+    line-height: 1.3em;
+  }
+}
+
+h3 {
+  font-size: $base-font-size * 1.6; // 16 * 1.75 = 28px
+  line-height: 1.52em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: $base-font-size * 0.875;
+  margin-bottom: .5em;
+  line-height: 1em;
+  letter-spacing: 0.025em;
+  word-spacing: 0.025em;
+  color: $purple;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+}
+
+h6 {
+  font-size: $base-font-size;
+}
+
+p,
+.gnewtonCareerBodyClass * {
+  font-size: $base-font-size * 1.2;
+  margin: 0 0 ($base-font-size * 1.5); //
+  line-height: 1.325em;
+  font-weight: 400;
+  letter-spacing: 0.005em;
+}
+
+// General Links
+a {
+  color: $base-link-color;
+  text-decoration: none;
+  @include transition(color 0.1s linear);
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}
+
+// Content Headers
+.content-header {
+  h2 {
+    font-family: $main-font;
+    font-size: $base-font-size * 2.75; // 44px
+  }
+  .options {
+    margin-top: 12px;
+  }
+}
+
+// Article Content Typography
+.content-article {
+  @include clearfix;
+  text-align: left;
+
+  // Lists
+  ul {
+    margin: 0 auto ($base-line-height * .5);
+    li {
+      list-style-type: disc;
+      margin-left: 32px;
+      line-height: $base-line-height;
+    }
+  }
+  ol {
+    margin: 0 auto ($base-line-height * .5);
+    li {
+      list-style: decimal;
+      margin-left: 32px;
+      line-height: $base-line-height;
+    }
+  }
+
+  // Article Type
+  .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: $main-font;
+    font-size: .7em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    padding: .3em 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+
+
+  // Links
+  a:not(.btn) {
+    font-weight: 700;
+    color:$secondary-link-color;
+    &:hover {
+      color:$secondary-link-hover-color;
+    }
+  }
+
+  // Paragraphs
+  p {
+    font-family: $main-font;
+    // Strong Copy
+    span {
+      font-family: $main-font;
+      font-weight: 700;
+    }
+  }
+}
+
+
+// Rule Header
+header.rule {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background: $base-border-color;
+        margin-left: -60px;
+        padding-right: 120px;
+        top: 50%;
+        left: 0;
+    }
+    h1 {
+        margin-top: 0;
+        background: $white;
+        padding: 0 ($base-line-height / 4) 0 ($base-line-height / 4);
+        z-index: 10;
+        position: relative;
+        display: inline-block;
+    }
+}
+
+
+// Contact Info
+#contact-info {
+    line-height: 1.5em;
+
+    span, a {
+        display: block;
+        color: $grey;
+        font-size: $base-font-size * 0.875;
+    }
+    span a {
+        font-size: inherit;
+        &:hover {
+          color: $purple;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+// Typography
+///////////////////////////////////////////////////////////////////////////////
+$main-font:"adobe-garamond-pro", $helvetica; // 400, normal/italic
+$aux-font: "proxima-nova"; // 600, 700, bold
+
+$base-font-family: $main-font;
+$header-font-family: $aux-font;
+
+// Sizes
+///////////////////////////////////////////////////////////////////////////////
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.875;
+$base-border-radius:0;
+$secondary-border-radius: 0;
+$navbarHeight: 120px;
+$navbarLinkPadding: 0 1em;
+
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+$white-1                         :                       #f9f8f8;
+$white-2                         :                       #fffaec;
+$white-3                         :                       #fff;
+
+$green-1                         :                       #87a48f;
+$green-2                         :                       #b4dbbf;
+
+$orange-1                        :                       #c98968;
+$orange-2                        :                       #B27F65;
+
+$brown-1                         :                       #c0bbba;
+$brown-2                         :                       #d2bfbc;
+$brown-3                         :                       #6d605d;
+$brown-4                         :                       #4e4442;
+$brown-5                         :                       #B08F7F;
+$brown-6                         :                       #D2BFBC;
+
+
+
+// Body Color
+$base-body-color: $white-1;
+
+//  Font Colors
+$base-font-color: $brown-3;
+$base-accent-color: $orange-2;
+
+//  Text Link Colors
+$base-link-color: $orange-2;
+$hover-link-color: darken($orange-2, 8);
+
+$secondary-link-color: $green-1;
+$secondary-link-hover-color: darken($green-1, 8);
+
+// Label Colors
+$label-text-color: $orange-1;
+$label-focus-color: $orange-1;
+
+// Border color
+$base-border-color: lighten($orange-1, 20);
+
+// Flash Colors
+$error-color: $orange-1;
+$notice-color: $green-2;
+$success-color: $green-1;
