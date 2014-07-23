@@ -22,7 +22,8 @@ html.opacity {
 html.opacity body.run {
     #site-header,
     #site-content,
-    #site-footer {
+    #site-footer,
+    #site-content img  {
         @include opacity(1);
     }
 }
