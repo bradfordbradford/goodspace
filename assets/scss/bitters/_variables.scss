@@ -1,17 +1,17 @@
 // Typography
 ///////////////////////////////////////////////////////////////////////////////
 $main-font:"adobe-garamond-pro", $helvetica; // 400, normal/italic
-$aux-font: "proxima-nova"; // 600, 700, bold
+$aux-font: "proxima-nova"; //  700, 800 bold/extra bold
 
 $base-font-family: $main-font;
 $header-font-family: $aux-font;
 
 // Sizes
 ///////////////////////////////////////////////////////////////////////////////
-$base-font-size: 1em;
+$base-font-size: 15px;
 $base-line-height: $base-font-size * 1.875;
 $base-border-radius:0;
-$secondary-border-radius: 0;
+$secondary-border-radius: 3px;
 $navbarHeight: 120px;
 $navbarLinkPadding: 0 1em;
 
@@ -21,7 +21,9 @@ $white-1                         :                       #f9f8f8;
 $white-2                         :                       #fffaec;
 $white-3                         :                       #fff;
 
-$green-1                         :                       #87a48f;
+$shadow-gray-1                   :                       #EFEEEA;
+
+$green-1                         :                       #72A37E;
 $green-2                         :                       #b4dbbf;
 
 $orange-1                        :                       #c98968;

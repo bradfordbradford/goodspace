@@ -1,6 +1,24 @@
 // More Mixins
 // -------------------------------------------------------
 
+// Vertical Align
+%vertical-align-parent {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+%vertical-align-child {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+}
+.vertical-align-parent {
+  @extend %vertical-align-parent;
+
+  .vertical-align-child {
+      @extend %vertical-align-child;
+    }
+}
 
 
 // HEX to RGB with IE Fallback
@@ -55,7 +73,7 @@
 
 // Full Bleed for Removing Columns
 @mixin fullBleed {
-    margin: auto auto ;
+    margin: auto auto;
     display: block;
     float:none;
     width: auto;

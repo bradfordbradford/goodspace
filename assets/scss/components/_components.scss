@@ -4,11 +4,13 @@
 @import
     "blocks/structure-general"
     ,"blocks/structure-header"
+    ,"slicknav"
+    ,"lightslider"
+    ,"lightgallery"
     ,"blocks/structure-sections"
     ,"blocks/structure-footer"
     ,"utility-grid-classes"
     ,"utility-classes"
-    // ,"animations"
     ,"buttons"
     ,"icons"
     ,'mq'
@@ -18,3 +20,4 @@
 
 
 
+#map {width: 100%;height: 500px;}

@@ -7,23 +7,59 @@
 /////////////////////////////////////////////////////////
 @include media($ipad-landscape-down) {
 
+
+    // Paper Pull
+    .paper.pull-up {
+        top: -2em;
+        padding:1.5em 3em;
+    }
+
+    // Ornament Headers
+    .h-ornam-lines {
+        &:before {
+            left: 0px;
+            width: 100%;
+            top: -7px;
+        }
+        &:after {
+            right: 0px;
+            top: 24px;
+            width: 100%;
+        }
+    }
+
+    // Vertical Align
+    .vertical-align-parent {
+        height: 100% !important;
+        min-height: 320px !important;
+        .vertical-align-child {
+            transform: none !important;
+            padding: 3em .5em 2em !important;
+        }
+    }
+
 }
 
 
 // PORTRAIT
 /////////////////////////////////////////////////////////
 @include media($ipad-portrait-down) {
-
-
-    // Utility Hide/Show
-    .hide-on-tablet {
-        display: none !important;
-    }
-    .show-on-tablet {
-        display: inherit !important;
+    // General Layout
+    main {
+        padding-top: 1em;
     }
 
-    // Utility Grid
+    #browse-good-space {
+        margin-top: -1em;
+    }
+    #browse-commercial header, #browse-residential header {
+        margin: -42px auto;
+        margin-left: -40%;
+    }
+    .vertical-align-parent .vertical-align-child {
+       @include fullBleed;
+    }
+    // Full Grid
     .col-one,
     .col-two,
     .col-three,
@@ -35,12 +71,32 @@
     .col-nine,
     .col-ten,
     .col-eleven,
-    .col-twelve{
+    .col-twelve {
         @include fullBleed;
-        margin: $base-line-height auto;
+    }
+
+    // Utility Hide/Show
+    .hide-on-tablet {
+        display: none !important;
+    }
+    .show-on-tablet {
+        display: inherit !important;
     }
 
 
+
+    // Callout
+    .callout {
+        .callout-content,
+        .callout-header {
+            width: auto;
+            float:none;
+            min-height: inherit;
+            .callout-inner {
+                padding: 2em 1.5em 2em;
+            }
+        }
+    }
 
 }
 
@@ -48,6 +104,22 @@
 /////////////////////////////////////////////////////////
 @include media($phone-down) {
     .line-break {display: inline-block;}
+    // 3 Across
+    .col-3-across .col-item {
+        @include fullBleed;
+        margin: 0 auto 32px !important;
+    }
+
+    // 4 Across
+    .col-4-across .col-item {
+        @include fullBleed;
+        margin: 0 auto 32px !important;
+    }
+
+    // Footer Col
+    .footer-col {
+        @include fullBleed;
+    }
 }
 
 

@@ -1,18 +1,23 @@
 // Neat Overrides
 ///////////////////////////////////////////////////////////////////////////////
-$column: 72px;
-$gutter: 8px;
+$column: em(72);
+$gutter: em(16);
 $grid-columns: 12;
-$max-width: em(1280);
+$max-width: em(960);
 
 // Neat Breakpoints
 ///////////////////////////////////////////////////////////////////////////////
 $laptop: em(1224);
 $adjust-background-size: em(1176);
+$small-desktop: em(940);
+$nav-breakpoint: em(768);
 $ipad-landscape: em(768);
 $ipad-portrait: em(674);
 $phone: em(480);
 $phone-portrait: em(320);
+
+$above-desktop: new-breakpoint(min-width $small-desktop);
+$swap-nav: new-breakpoint(max-width $nav-breakpoint);
 
 $adjust-background-size: new-breakpoint(max-width $adjust-background-size);
 $ipad-landscape-down: new-breakpoint(max-width $ipad-landscape 4);

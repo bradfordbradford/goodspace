@@ -24,27 +24,57 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; // Fix the character spacing for headings
   font-weight: 600;
   margin: 0.38em 0 ; //6px 0
+
+  &.emph {
+    font-family: $main-font;
+    font-style: italic;
+  }
 }
 
 h1 {
   font-weight: 700;
   font-size: 3em;
   line-height: 58px;
+  @include media($ipad-portrait-down) {
+    font-size: 2.5em;
+    line-height: 48px;
+  }
 }
 
 h2 {
   font-size: 2.5em;
   line-height: 49px;
+  @include media($ipad-portrait-down) {
+    font-size: 2em;
+    line-height: 38px;
+  }
 }
 
 h3 {
   font-size: 2em;
   line-height: 39px;
+  @include media($ipad-portrait-down) {
+    font-size: 1.5em;
+    line-height: 28px;
+  }
 }
 
 h4 {
   font-size: 1.13em;
   line-height: 22px;
+  @include media($ipad-portrait-down) {
+    font-size: 1em;
+    line-height: 16px;
+  }
+}
+
+
+h5 {
+  font-size: 0.875em;
+  line-height: 18px;
+  color: $brown-1;
+  text-transform: uppercase;
+
 }
 
 p {
@@ -53,6 +83,12 @@ p {
   font-weight: 400;
   // letter-spacing: 0.005em;
   margin: 0.31em 0 1.25em; //5px 0 20px
+  &.small {
+    font-size: 1em; // (16)
+  }
+  &.med {
+    font-size: 1.125em; // (18)
+  }
 }
 
 .center {
@@ -76,9 +112,56 @@ a {
 }
 
 
+// Ornament Headers
+.h-ornam-lines {
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background: $brown-1;
+    top: 6px;
+    width:40%;
+    height: 1px;
+  }
+  &:before {
+    left: 0px;
+  }
+  &:after {
+    right: 0px;
+  }
+}
+.h-ornam-dot {
+  display: inline-block;
+  position: relative;
+  &:before,
+  &:after {
+    content: '\00B7';
+    font-size: 46px;
+    position: absolute;
+    color: inherit;
+    top: -4px;
+  }
+  &:before {
+    left: -20px;
+  }
+  &:after {
+    right: -20px;
+  }
+}
+
 
 // Content Headers
-.content-header {
+header {
+  &.content-header {
+  margin: 1em auto 2em;
+  text-align: center;
+  }
+
+  .property-title {
+    color: $green-1;
+  }
+
   .title {
     text-align: center;
     color: $orange-1;

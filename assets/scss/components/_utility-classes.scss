@@ -18,11 +18,116 @@
 }
 
 
+// property-rules
+.property-rules {
+    @include clearlyFixed;
+    margin:24px 0 24px;
+
+    img, .label {
+        display: inline-block;
+        float: left;
+    }
+    .label {
+        margin:6px 0 0 16px;
+    }
+}
+
 // Breaks
 .line-break {
     display: block;
 }
 
+
+// Inline List
+.inline-list {
+    list-style: none;
+    margin:0;
+    padding:0;
+    li {
+        margin:0 2px 0 0;
+        padding:0;
+        display: inline-block;
+    }
+}
+
+// Label
+.label {
+    border-radius: $secondary-border-radius;
+    background: $shadow-gray-1;
+    padding: .5em 1.75em .5em;
+    font-family: $aux-font;
+}
+
+// Callouts
+.callout {
+    margin: 4em 0 2em;
+    .callout-content,
+    .callout-header {
+        min-height: 150px;
+        float:left;
+        .callout-inner {
+            padding: 3em 1.5em 1em;
+        }
+    }
+    .callout-content {
+        width: 75%;
+        background: $shadow-gray-1;
+        h4, h3 {
+            margin:0;
+        }
+        h3 a {
+            color: $orange-1;
+        }
+
+    }
+    .callout-header {
+        width: 25%;
+        background: $green-1;
+        h4 {
+            text-transform: uppercase;
+            text-align: center;
+            color: $white-3;
+        }
+    }
+}
+
+
+// Property Heros
+.property-hero {
+    height: 320px;
+    width:100%;
+    background: $brown-4;
+    @include clearlyFixed;
+    margin: 0 auto 3.5em;
+
+    .property-hero-content {
+        @include span-columns(6);
+        @include centerColumns();
+        text-align: center;
+
+        .title, p, & {
+            color: $white-3;
+
+        }
+        .title {
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Paper - Negative Top
+.paper {
+    background: $white-3;
+    border-top: 8px solid $shadow-gray-1;
+    box-shadow: 0px -14px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 1.5em 5.5em;
+
+    &.pull-up {
+        position: relative;
+        top: -4em;
+    }
+}
 
 
 // // Colors
@@ -63,12 +168,12 @@
 //     text-align: center;
 //     margin: inherit auto;
 // }
-// .right {
-//     float:right;
-// }
-// .left {
-//     float:left;
-// }
+.right {
+    float:right !important;
+}
+.left {
+    float:left !important;
+}
 
 // // Padding
 // .padding-b {

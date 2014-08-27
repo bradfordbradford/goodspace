@@ -17,17 +17,10 @@
     // Logo
     #company-logo {
         float: left;
+        display: block;
+        width: 160px;
+        line-height: 120px;
 
-        h1 {
-            display: inline-block;
-            background: url(../img/logos/logo_400x68.png) no-repeat ;
-            background-size: 100%;
-            width:254px;
-            height:120px;
-            margin: 0;
-            position: relative;
-            top: 34px;
-        }
         span {
             position: absolute;
             left: -9999px;
@@ -36,23 +29,30 @@
 
 
     // Nav
+    #site-nav-wrap {
+        float:right;
+        display: inline-block;
+        @include clearfix;
+    }
     nav#site-nav {
         float:right;
-        background: $white-1;
+        display: inline-block;
 
         li {
             display: inline-block;
-            margin: 32px 32px 0;
+            margin: 32px 16px 0;
+            &:last-child {
+                margin-right: 0px;
+            }
         }
         a {
             font-family: $aux-font;
-            padding: $navbarLinkPadding;
             color: $brown-3;
             vertical-align: middle;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 800;
             letter-spacing: 0.08em;
-            font-size: 1em;
+            font-size: .875em;
             line-height: 2.5em;
             text-align: left;
             &,span {
@@ -61,7 +61,7 @@
 
             span {
                 color:$brown-5;
-                padding: $navbarLinkPadding;
+                // padding: $navbarLinkPadding;
                 display: block;
                 font-style: italic;
                 font-family: $main-font;
@@ -78,6 +78,42 @@
                     color: $orange-1;
                 }
             }
+        }
+    }
+
+    // Breakpoint - Above small desktop/tablet
+    @include media($above-desktop) {
+        #company-logo {
+            width: 220px;
+            line-height: 140px;
+        }
+
+        nav#site-nav a {
+            font-size: 1em;
+        }
+    }
+
+    // Breakpoint - Swap Nav
+    @include media($swap-nav) {
+        & {
+            height: auto;
+            #company-logo {
+                line-height: 68px;
+                padding: 0px 0 0 8px;
+                img {
+                    position: relative;
+                    top: 7px;
+                }
+            }
+        }
+        #site-nav-wrap {
+            float: none;
+            width:100%;
+            display: block;
+        }
+
+        nav#site-nav {
+            display: none;
         }
     }
 }

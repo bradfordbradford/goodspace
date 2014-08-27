@@ -21,8 +21,8 @@ article.type-system-geometric {
     font-weight: 700;
     margin-bottom: .5em;
 
-    @include media($medium-screen) {
-      font-size: 2.6em;
+    @include media($ipad-portrait-down) {
+      font-size: 1.2em;
     }
   }
 
@@ -34,8 +34,8 @@ article.type-system-geometric {
     line-height: 1.4em;
     margin-bottom: 1.1em;
 
-    @include media($medium-screen) {
-      font-size: 1.3em;
+    @include media($ipad-portrait-down) {
+      font-size: 1em;
     }
   }
 

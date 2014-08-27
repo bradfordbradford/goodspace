@@ -39,32 +39,34 @@
             .outer-bounds
 
                 %a#company-logo{:href => ""}
-                    %h1
-                        %span GoodSpace
-                %nav#site-nav
-                    %li
-                        %a{:href => "#"}
-                            Commercial
-                            %span
-                                Properties
-                    %li
-                        %a{:href => "#"}
-                            Residential
-                            %span
-                                Properties
-                    %li
-                        %a{:href => "#"}
-                            About
-                            %span
-                                History & Guide
-                    %li
-                        %a{:href => "#"}
-                            Contact
-                            %span
-                                Information
+                    %img{:src => "../img/logos/logo_440x80.jpg", :alt => ""}/
+                    %span GoodSpace
+                #site-nav-wrap
+                    %nav#site-nav
+                        %li
+                            %a.active{:href => "#"}
+                                Commercial
+                                %span
+                                    Properties
+                        %li
+                            %a{:href => "#"}
+                                Residential
+                                %span
+                                    Properties
+                        %li
+                            %a{:href => "#"}
+                                About
+                                %span
+                                    Contact & Info
+                        %li
+                            %a{:href => "#"}
+                                Neighborhood
+                                %span
+                                    History & Map
 
 
         %main#site-content{:role => "main"}
+
             #browse-good-space
                 %section#browse-commercial
                     %a{:href => "#"}
@@ -74,7 +76,7 @@
                                 Commercial
                                 %span.line-break
                                 Properties
-                            .btn{:href => ""} View Our Spaces
+                            .btn View Our Spaces
                         .overlay
 
 
@@ -86,20 +88,32 @@
                                 Residential
                                 %span.line-break
                                 Properties
-                            .btn{:href => ""} View Our Spaces
+                            .btn View Our Spaces
                         .overlay
 
+
             .outer-bounds
-
-                %section.inner-bounds#welcome-to-good-space
-                    .content-container
+                %section#welcome-to-good-space
+                    .col-ten.col-center.paper.pull-up
                         %header.content-header
-                            %h3.title A Good Space to Call Home
+                            %h3.title.h-ornam-dot
+                                A GOOD SPACE TO  CALL HOME
                         %article.content-copy
-                            %p
-                                We also do 'Simple' unbelievably well. We know that consistency is the 'Genius'. We hire the talented ones. And driven ones. We remember who puts the food on our table. We know you can’t build a business until you build a team. We recognise great value doesn’t mean a low price. That fun comes from hard work. That this is a place of learning. And that we will give back to our community.
+                            %p.med
+                                Near the heart of Dallas you’ll find an ecclectic neighborhood of art galleries and studios, award-winning restaurants, inviting botiques, and cozy homes.
+                                %em
+                                    The Dallas Morning News
+                                calls the Bishop Arts District one of the ten things Dallas can brag about. It’s also home to Good Space, an inspired source of meticulously renovated commerical & residential properties. To find your place in Good Space, read on, call
+                                %a{:href => "tel:(214) 942-0690"}
+                                    (214) 942-0690
+                                , or email
+                                %a{:href => "mailto:info@goodspace.com"}
+                                    info@goodspace.com.
 
-                %section.inner-bounds#what-we-do
+
+
+
+                %section#what-we-do
                     %ul.col-3-across
                         %li.col-item
                             %img{:src => "http://placehold.it/400x260", :'data-src' => "http://placehold.it/400x260", :alt => ""}/
@@ -131,53 +145,52 @@
 
         %footer#site-footer{:role => "contentinfo"}
             .outer-bounds
-                .inner-bounds
-                    .col-four
-                        %header
-                            %h4 Contact
-                        %ul
-                            %li.phone
-                                Phone:
-                                %a{:href => "#"} 214.942.0690
-                            %li.fax
-                                Fax:
-                                %a{:href => "#"} 214.942.0635
-                            %li.email
-                                Email:
-                                %a{:href => "#"} info@goodspace.com
 
-                            %span.line-break
+                .col-four
+                    %header
+                        %h4 Contact
+                    %ul
+                        %li.phone
+                            Phone:
+                            %a{:href => "#"} 214.942.0690
+                        %li.fax
+                            Fax:
+                            %a{:href => "#"} 214.942.0635
+                        %li.email
+                            Email:
+                            %a{:href => "#"} info@goodspace.com
 
-                            %li
-                                %em
-                                    Office Hours
-                                %br/
-                                M-F: 9am-5pm
+                        %span.line-break
 
-                    .col-four
-                        %header
-                            %h4 Location
-                        %ul#address
-                            %li.street
-                                408 W 8th St Ste 103
-                            %li.city
-                                Dallas, TX 75208
-                            %li.district
-                                %em
-                                    Bishop Arts District, Oak Cliff
-
-                            %span.line-break
-                                %a{:href => "#"} View Google Maps
-
-                    .col-four
-                        %header
-                            %a.facebook{:href => "#", :'data-icon'=>'d'}
-                        %hr/
-                        %em.copyright
-                            &copy; Copyright 2014 Good Space, Inc.
+                        %li
+                            %em
+                                Office Hours
                             %br/
-                            All Rights Reserved.
+                            M-F: 9am-5pm
 
+                .col-four
+                    %header
+                        %h4 Location
+                    %ul#address
+                        %li.street
+                            408 W 8th St Ste 103
+                        %li.city
+                            Dallas, TX 75208
+                        %li.district
+                            %em
+                                Bishop Arts District, Oak Cliff
+
+                        %span.line-break
+                            %a{:href => "#"} View Google Maps
+
+                .col-four
+                    %header
+                        %a.facebook{:href => "#", :'data-icon'=>'d'}
+                    %hr/
+                    %em.copyright
+                        &copy; Copyright 2014 Good Space, Inc.
+                        %br/
+                        All Rights Reserved.
 
 
 

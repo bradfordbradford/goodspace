@@ -30,14 +30,53 @@
         background: darken($base-link-color, .2)
     }
 
-    // // Secondary
-    // &.btn-secondary {
-    //     background: $purple;
-    //     color: $white;
-    //     &:hover {
-    //         background: darken($purple, 8)
-    //     }
-    // }
+    // Secondary
+    &.btn-secondary {
+        color: $green-1;
+        border-color: $green-1;
+        font-family: $aux-font;
+        text-transform: uppercase;
+        font-size: .75em;
+        &:hover {
+            border-color: $orange-1;
+            color: $orange-1;
+            background: transparent;
+        }
+
+        &.active {
+            border-color: $orange-1;
+            color: $orange-1;
+        }
+    }
+
+    // Simple
+    &.btn-simple {
+        color: darken($shadow-gray-1, 4);
+        border-color: darken($shadow-gray-1, 4);
+        font-family: $aux-font;
+        text-transform: uppercase;
+        font-size: .75em;
+        &:hover {
+            border-color: darken($shadow-gray-1, 6);
+            color: darken($shadow-gray-1, 6);
+            background: transparent;
+        }
+
+        &.active-commercial {
+            border-color: $green-1;
+            color: $green-1;
+        }
+        &.active-residential {
+            border-color: $orange-1;
+            color: $orange-1;
+        }
+    }
+
+    // Full Width
+    &.full-width {
+        width: 100%;
+        // display: block;
+    }
 
     // // Tertiary
     // &.btn-tertiary {

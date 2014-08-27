@@ -3,7 +3,7 @@
 #browse-commercial,
 #browse-residential {
     width: 50%;
-    min-height: 632px;
+    min-height: 532px;
     float: left;
     position: relative;
 
@@ -40,6 +40,13 @@
     .btn {margin-top: 0.88em;}
 }
 
+#browse-good-space {
+    margin-top: -3.5em;
+    // margin-bottom: 3.5em;
+    @include clearfix;
+}
+
+
 #browse-commercial {
     background: url('../img/content/commercial_1280x672.jpg') no-repeat;
     .overlay {
@@ -69,8 +76,39 @@
     }
 }
 
-#browse-good-space {
-    margin-top: -3.5em;
-    margin-bottom: 3.5em;
-    @include clearfix;
+
+
+// Breakpoint: Below Ipad Landscape
+@include media($ipad-landscape-down) {
+    #browse-commercial,
+    #browse-residential {
+        width: 100%;
+        min-height: inherit;
+        height: 200px;
+        display: block;
+        float: none;
+        header {
+            margin: -30px auto;
+            max-width: 80%;
+            left: 50%;
+            margin-left: -40%;
+            border: 4px solid $white-3;
+            h1 {
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+            em,
+            .btn {
+                display: none
+            }
+        }
+    }
+}
+
+
+// Property Listing
+.property-listing-detail {
+    header h2 {
+        color: $green-1;
+    }
 }

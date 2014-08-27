@@ -13,7 +13,38 @@ $(document).ready(function($) {
 
 
 
+    // Slick Nav
+    /////////////////////////////////////////////////////////
+    $(function(){
+        $('nav#site-nav').slicknav({
+            prependTo: '#site-nav-wrap',
+            label: ' ',
+            duration: '400',
+            closeOnClick: 'true'
+        });
+    });
 
+
+
+    // lightSlider & lightGallery
+    /////////////////////////////////////////////////////////
+    $(function(){
+        $(".image-list").lightSlider({
+            gallery:true,
+            minSlide:1,
+            maxSlide:1,
+            auto:true,
+            mode:'fade',
+            proportion:'71.3%',
+            thumbWidth:142,
+            onSliderLoad: function() {
+                $('.image-list').removeClass('cS-hidden');
+            }
+        });
+
+        $(".image-list").lightGallery();
+
+    });
 
     // SMOOTH
     /////////////////////////////////////////////////////////

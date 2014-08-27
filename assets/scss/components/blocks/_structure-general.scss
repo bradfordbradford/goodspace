@@ -18,32 +18,29 @@ html, body {
 
 .outer-bounds {
     @include outer-container();
+    @include clearfix;
     padding: 0 $gutter;
 }
-
-.inner-bounds {
-    @include span-columns(10);
-    @include centerColumns;
-    clear: both;
-}
-
-.content-container {
-    @include span-columns(7);
-    @include centerColumns;
-}
-
 main {
     background: $white-3;
     padding-bottom: 2.5em;
     padding-top: 3.5em;
 }
 
-// Animations: General
-///////////////////////////////////////////////////
-.col-3-across .col-item img {
-    @include transition(opacity 300ms ease-in-out);
-    @include backface-visibility(hidden);
-    &:hover {
-        @include opacity(.8 !important);
+.footer-col {
+    @include span-columns(4);
+}
+
+.col-3-across .col-item {
+    p {
+        @extend p.small;
+        text-align: center;
+    }
+    img {
+        @include transition(opacity 300ms ease-in-out);
+        @include backface-visibility(hidden);
+        &:hover {
+            @include opacity(.8 !important);
+        }
     }
 }

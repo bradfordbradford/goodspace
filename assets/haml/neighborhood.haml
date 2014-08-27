@@ -1,0 +1,184 @@
+!!! 5
+%html.no-js{:lang => "en"}
+
+    %head
+
+        %meta{:charset => "utf-8", :"http-equiv"=>"Content-Type", :content=>"text/html"}
+
+        %title GoodSpace
+        %meta{:name => "description", :content => ""}
+        %meta{:name => "keywords", :content => ""}
+        %meta{:name => "author", :content => ""}
+
+        -# Mobile
+        %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+
+        -# Typekit
+        %script{:src => "//use.typekit.net/pyj4pti.js"}
+        %script
+            try{Typekit.load();}catch(e){}
+
+        -# Favicon
+        / %link{:href => "../img/icons/favicon.ico", :rel => "shortcut icon"}
+
+        -# CSS
+        %link{:rel => "stylesheet", :href => "../css/app.css"}
+
+        -# Modernizr
+        %script{:src => "../js/min/modernizr.min.js"}
+
+        -# IE LT 9
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../css/ie8.css" /><script src='../js/min/ie.min.js'></script><![endif]-->
+
+
+
+    %body.init
+
+        %header#site-header{:role => "navigation"}
+            .outer-bounds
+
+                %a#company-logo{:href => ""}
+                    %img{:src => "../img/logos/logo_440x80.jpg", :alt => ""}/
+                    %span GoodSpace
+                #site-nav-wrap
+                    %nav#site-nav
+                        %li
+                            %a.active{:href => "#"}
+                                Commercial
+                                %span
+                                    Properties
+                        %li
+                            %a{:href => "#"}
+                                Residential
+                                %span
+                                    Properties
+                        %li
+                            %a{:href => "#"}
+                                About
+                                %span
+                                    Contact & Info
+                        %li
+                            %a{:href => "#"}
+                                Neighborhood
+                                %span
+                                    History & Map
+
+
+        %main#site-content{:role => "main"}
+            .outer-bounds
+                .content-row
+                    %section.col-six#the-neighborhood
+                        %header
+                            %h2 Neighborhood
+                            %h4 The History
+
+                        %br/
+
+                        %article
+                            %p
+                                The Bishop Arts Building features seven business suites ranging from 550 to 2,000 square feet, as well as two loft-style apartments. This 1928 building is the largest and most extensively renovated in the Bishop Arts District and is headquarter for Good Space, Inc. Tenants enjoy secured parking, controlled building access, award-winning landscaping, a common coffee bar–not to mention charming architecture and a dozen independent restaurants within two blocks.
+                            %p
+                                The building’s suites come in three flavors–loft-style, storefront, and Mission-styke. Among the tenants at the Bishop Arts Building are two architects, an arts nonprofit, an arts magazine, a massage therapist, and two real-estate firms. The property carries an official historical listing on both local and national registeries.
+
+                    %aside.col-six#neighborhood-photos
+                        %ul.image-list
+                            %li{:'data-thumb' => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400"}
+                                %img{:src => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400", :alt => ""}/
+
+                            %li{:'data-thumb' => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400"}
+                                %img{:src => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400", :alt => ""}/
+
+                            %li{:'data-thumb' => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400"}
+                                %img{:src => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400", :alt => ""}/
+
+                            %li{:'data-thumb' => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400"}
+                                %img{:src => "http://placehold.it/550x400", :'data-src' => "http://placehold.it/550x400", :alt => ""}/
+
+                .content-row
+                    #view-map.callout
+                        .callout-content
+                            .callout-inner
+                                %h4 For a map of the area and all our properties:
+                                %h3.emph
+                                    %a{:href => "#"}
+                                        View the Interactive Map
+
+                        .callout-header
+                            %a{:href => "tel:214-942-0690"}
+                                .callout-inner
+                                    %h4
+                                        Get the
+                                        %span.line-break
+                                        Big Picture
+
+        %footer#site-footer{:role => "contentinfo"}
+            .outer-bounds
+                .col-four
+                    %header
+                        %h4 Contact
+                    %ul
+                        %li.phone
+                            Phone:
+                            %a{:href => "#"} 214.942.0690
+                        %li.fax
+                            Fax:
+                            %a{:href => "#"} 214.942.0635
+                        %li.email
+                            Email:
+                            %a{:href => "#"} info@goodspace.com
+
+                        %span.line-break
+
+                        %li
+                            %em
+                                Office Hours
+                            %br/
+                            M-F: 9am-5pm
+
+                .col-four
+                    %header
+                        %h4 Location
+                    %ul#address
+                        %li.street
+                            408 W 8th St Ste 103
+                        %li.city
+                            Dallas, TX 75208
+                        %li.district
+                            %em
+                                Bishop Arts District, Oak Cliff
+
+                        %span.line-break
+                            %a{:href => "#"} View Google Maps
+
+                .col-four
+                    %header
+                        %a.facebook{:href => "#", :'data-icon'=>'d'}
+                    %hr/
+                    %em.copyright
+                        &copy; Copyright 2014 Good Space, Inc.
+                        %br/
+                        All Rights Reserved.
+
+
+
+
+
+        -# Scripts
+        %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+        // window.jQuery || document.write('<script src="../js/min/jquery.min.js"><\/script>')
+        %script{:src => "../js/min/sitescripts.min.js"}
+        %script{:src => "../js/min/app.min.js"}
+
+
+
+        -# Google Analytics
+            %script
+                var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+                (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+                g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g,s)}(document,'script'));
+
+
+
+
+
