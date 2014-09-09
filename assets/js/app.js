@@ -46,6 +46,24 @@ $(document).ready(function($) {
 
     });
 
+    // lightSlider without THUMBS
+    /////////////////////////////////////////////////////////
+    $(function(){
+        $(".image-list-no-th").lightSlider({
+            minSlide:1,
+            maxSlide:1,
+            auto:true,
+            mode:'fade',
+            // controls:false,
+            onSliderLoad: function() {
+                $('.image-list-no-th').removeClass('cS-hidden');
+            }
+        });
+
+        $(".image-list-no-th").lightGallery();
+
+    });
+
     // SMOOTH
     /////////////////////////////////////////////////////////
     $(function() {
